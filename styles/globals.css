@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout debugger */
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+html {
+  min-width: 360px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply md:scroll;
+  }
+}
+@layer utilities {
+  @variants responsive {
+    /* STYLED SCROLL */
+
+    .scroll::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background: rgba(111, 135, 173, 0.2);
+    }
+
+    .scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(111, 135, 173, 0.3);
+    }
+  }
+}
+
+/* FONTS */
+/* Pacifico */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
