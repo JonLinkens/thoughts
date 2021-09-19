@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function Post({ app }) {
-  console.log(`/${app.filePath.replace(/\.mdx?$/, "")}`);
   return (
     <div className="border-t border-gray-200 my-1 ">
       <Link href={`/${app.filePath.replace(/\.mdx?$/, "")}`} passHref>
