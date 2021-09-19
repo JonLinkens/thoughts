@@ -6,9 +6,12 @@ export default function Post({ app }) {
       <Link href={`/${app.filePath.replace(/\.mdx?$/, "")}`} passHref>
         <a className="font-lato p-2">
           <div className="px-2">
-            <p className="text-lg pb-1">
-              <strong>{app.data.title}</strong>
-            </p>
+            <div className="flex justify-between items-center">
+              <p className="text-lg pb-1">
+                <strong>{app.data.title}</strong>
+              </p>
+              <p className="text-gray-400 text-sm ">{app.data.date}</p>
+            </div>
             <p className="">{app.data.description}</p>
           </div>
         </a>

@@ -16,11 +16,7 @@ export default function Post({ app }) {
       />
 
       <article className="prose lg:prose-lg xl:prose-xl justify-center flex-col mx-auto">
-        <ReactMarkdown
-          className=""
-          remarkPlugins={[gfm]}
-          components={CodeBlock}
-        >
+        <ReactMarkdown remarkPlugins={[gfm]} components={CodeBlock}>
           {app.content}
         </ReactMarkdown>
       </article>
