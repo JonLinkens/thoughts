@@ -15,7 +15,7 @@ export default function Post({ app }) {
         isIndexed={true}
       />
 
-      <article className="prose lg:prose-lg xl:prose-xl justify-center flex-col mx-auto">
+      <article className="prose lg:prose-lg xl:prose-xl justify-center flex-col mx-auto mb-12">
         <ReactMarkdown remarkPlugins={[gfm]} components={CodeBlock}>
           {app.content}
         </ReactMarkdown>
