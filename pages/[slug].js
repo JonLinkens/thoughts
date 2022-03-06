@@ -6,6 +6,8 @@ const gfm = require("remark-gfm");
 import CodeBlock from "../components/CodeBlock";
 import Meta from "../components/Meta";
 
+import Comments from "../components/Comments";
+
 export default function Post({ app }) {
   return (
     <div className="mt-8 mx-2 md:mx-auto flex-grow">
@@ -20,6 +22,7 @@ export default function Post({ app }) {
           {app.content}
         </ReactMarkdown>
       </article>
+      <Comments title={app.data.title} />
     </div>
   );
 }
