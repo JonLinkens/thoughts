@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
       <div className="flex flex-col h-screen ">
         <Header />
         <Component {...pageProps} />
-        <Footer />
       </div>
     </>
   );
